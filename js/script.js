@@ -28,3 +28,12 @@ $(document).ready(function() {
    });
 });
 
+
+$(window).scroll(function(){
+   if ($(window).scrollTop() > 2) {
+      $('.header').addClass('_scroll');
+   }
+   else {
+      $('.header').removeClass('_scroll')
+   }
+});
