@@ -880,9 +880,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       height: 100%;
       opacity: 0;
       visibility: hidden;
-      & a{
-         padding: 0px 28px 0px 0px; 
+      
+      & a:nth-child(1){
+         padding: 0 14px 0 0;
       }
+      & a:nth-child(2){
+         padding: 0 0 0 14px;
+      }
+
       & a:hover{
          opacity: 0;
       }
@@ -896,9 +901,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       align-items: center;
       overflow: hidden;
       transform: translate(-50%,0);
-
-      & a{
-         padding: 0px 28px 0px 0px; 
+      & a:nth-child(1){
+         padding: 0 14px 0 0;
+      }
+      & a:nth-child(2){
+         padding: 0 0 0 14px;
       }
    }
    
