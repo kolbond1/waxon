@@ -1087,3 +1087,280 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
   }
 }
+
+.video {
+  position: relative;
+  padding: 210px 0 207px 0;
+}
+
+.video__play {
+  padding: 15px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  left: 50%;
+  margin: 0px 0px 44px -50px;
+}
+
+.video__play:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.video__content {
+  position: relative;
+  z-index: 1;
+  max-width: 552px;
+  margin: 0 auto;
+}
+
+.video__title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px 0px 29px 0px;
+}
+
+.video__subtitle {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px 0px 40px 0px;
+}
+
+.video__time {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #c7b299;
+}
+
+.video__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.iphone {
+  padding: 79px 0px 0px 0px;
+}
+
+.iphone__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.iphone__img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.iphone__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.iphone__title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #555555;
+  padding: 116px 0px 40px 0px;
+}
+
+.iphone__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #8c8c8c;
+  padding: 0px 0px 45px 0px;
+}
+
+.iphone__list {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  color: #8c8c8c;
+  padding: 0px 0px 0px 50px;
+}
+
+.iphone__list li {
+  position: relative;
+  padding: 0px 0px 0px 50px;
+}
+
+.iphone__list li::before {
+  content: '';
+  display: block;
+  background: url("../img/iphone/1.svg") 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+@media (max-width: 940px) {
+  .iphone {
+    padding: 70px 0px 0px 0px;
+  }
+  .iphone__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 auto;
+  }
+  .iphone__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0px 0px 40px 0px;
+  }
+  .iphone__title {
+    padding: 0px 0px 20px 0px;
+  }
+  .iphone__text {
+    padding: 0px 0px 20px 0px;
+    font-size: 14px;
+  }
+  .iphone__list {
+    font-size: 13px;
+    padding: 0px 0px 0px 20px;
+  }
+}
+
+.wetop {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,211b19+0,4e3427+99 */
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#1e5799), color-stop(0%, #211b19), color-stop(99%, #4e3427));
+  background: linear-gradient(to right, #1e5799 0%, #211b19 0%, #4e3427 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#4e3427',GradientType=1 );
+  /* IE6-9 */
+  padding: 80px 0;
+}
+
+.wetop__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wetop__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  padding: 0px 17px 0px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wetop__column span {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #f1eee9;
+  margin: 30px auto 0 auto;
+}
+
+.wetop__img {
+  display: block;
+  margin: 0 auto;
+  padding: 0px 0px 29px 0px;
+}
+
+.wetop__img2 {
+  position: relative;
+}
+
+.wetop__title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 0.75;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px 0px 21px 0px;
+}
+
+.wetop__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c7b299;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .wetop__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  .wetop__column:nth-child(1), .wetop__column:nth-child(2) {
+    padding: 0px 17px 60px 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wetop {
+    padding: 50px 0;
+  }
+  .wetop__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .wetop__column:nth-child(1), .wetop__column:nth-child(2), .wetop__column:nth-child(3), .wetop__column:nth-child(4) {
+    padding: 0px 17px 40px 17px;
+  }
+}
+
+@media (max-width: 368px) {
+  .wetop {
+    padding: 50px 0;
+  }
+}
