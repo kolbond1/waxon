@@ -17,6 +17,34 @@ $(document).ready(function(){
          }
       ]
    });
+   $('.slider2').slick({
+      adaptiveHeight:true,
+      slidesToShow:3,
+      slidesToScroll:1,
+      easing:'linear',
+      infinite:true,
+      autoplay:true,
+      autoplaySpeed:6000,
+      speed:1000,
+      pauseOnFocus:true,
+      pauseOnHover:true,
+      draggable:false,
+      responsive:[
+         {
+         breakpoint:849,
+         settings:{
+            slidesToShow:2,
+         }
+         },
+         {
+            breakpoint:666,
+            settings:{
+               slidesToShow:1,
+               
+            }
+            }
+      ]
+   });
 });
 
 
