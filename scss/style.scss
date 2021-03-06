@@ -1235,7 +1235,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 @media(max-width:767px){
    .wetop{
       &__column{
-         flex: 1 0 50%;
+         flex: 1 0 33.3333%;
       
       &:nth-child(1),
       &:nth-child(2){
@@ -1316,9 +1316,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
    bottom: -40px;
    left: 50%;
    transform: translate(-115%,0);
-   background: url("/img/content/arrows/left.svg") 0 0/100% no-repeat;
+   background: url("img/content/arrows/left.svg") 0 0/100% no-repeat;
    &:hover{
-      background: url("/img/content/arrows/left_h.svg") 0 0/100% no-repeat;
+      background: url("img/content/arrows/left_h.svg") 0 0/100% no-repeat;
    }
 }
 .slider2 .slick-arrow.slick-next{
@@ -1556,32 +1556,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .footer {
    background-color: #191919;
    padding: 80px 0 ;
-   &__row {
-      display: flex;
-      margin: 0 -15px;
-      flex-wrap: wrap;
-   }
-   &__logo{
-      font-family: Raleway;
-      font-size: 34px;
-      letter-spacing: -1.36px;
-      color: #ffffff;
-   }
-   &__logo img{
-      transform: translate(0,-0%);
-   }
+
+   
    &__column {
-      padding: 0 15px;
-      flex: 0 1 25%;
+
       &:hover .footer__text{
          color: #c7b299;
          transition: all 0.5s ease;
       }
    }
-
-   &__item {
-   }
-
    &__text {
       font-family: Montserrat;
       font-size: 14px;
@@ -1590,16 +1573,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
       text-align: left;
       color: #555555;
       padding: 5px 0px 30px 0px; 
-   }
 
-   &__title {
-      font-family: Raleway;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: left;
-      color: #ffffff;
-      padding: 0px 0px 14px 0px; 
-      
    }
 
    &__line {
@@ -1653,14 +1627,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
    }
 }
 
-
-
-
-.item-slider2 {
-
-   &__btn {
-   }
-}
 .text-footer {
    
    &:hover .text-footer__title{
@@ -1733,17 +1699,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
    }
 }
 
-@media(max-width:768px){
 
-   .footer{
-      &__column{
-         flex: 0 1 50%;
-         &_o4{
-
-         }
-      }
-   }
-}
 
 
 
@@ -1752,7 +1708,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
    &__list {
       display: flex;
-      
+      flex-wrap: wrap;
       & li{
          position: relative;
          flex: 0 1 25%;
@@ -1765,12 +1721,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
       font-size: 24px;
       font-weight: bold;
       color: #ffffff;
+      padding: 0px 0px 14px 0px; 
+      
       &_w{
          font-family: Raleway;
          font-size: 34px;
          letter-spacing: -1.36px;
          color: #ffffff;
       }
+
    }
 }
 .sub-menu-footer {
@@ -1778,10 +1737,92 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
       margin: 0 -15px;
    }
    &__list {
+
    }
 }
 
 
+
+.menu-footer {
+
+   &__arrow {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 17px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid #fff;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      &_1{
+         top: 28px;
+      }
+
+   }
+}
+
+
+
+@media(max-width:768px){
+
+   .text-footer__text{
+      color: #c7b299;
+   }
+   .footer__text{
+      color: #c7b299;
+      transition: all 0.5s ease;
+   }
+   .menu-footer{
+      &__arrow{
+         display: inline-block;
+         &_1{
+            top: 22px;
+         }
+      }
+      &__list{
+         &>li{
+            padding: 0;
+            flex: 0 1 100%;
+            border-bottom: 1px solid #3b3b3b;
+            &:last-child{
+               border-bottom: 0px;
+            }
+         }
+
+      }
+      &__title{
+         padding: 10px 0px 10px 0px; 
+         font-size: 20px;
+         
+         &_w img{
+            max-width: 30px;
+            transform: translate(0,-10%);
+         }
+      }
+   }
+   .text-footer__title{
+      font-size: 0px;
+      color: #fff;
+   }
+   .sub-menu-footer {
+
+      &__list{
+         
+         display: none;
+         position: relative;
+         left: 0;
+         top: 0;
+
+      }
+   }
+   .active1{
+      display: block;
+   }
+   .menu-footer__arrow.active1{
+      transform: rotate(-180deg);
+   }
+}
 
 
 
