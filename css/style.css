@@ -345,12 +345,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+@media (max-width: 992px) and (orientation: landscape) {
+  .main-screen__uptitle {
+    padding: 0px 0px 5px 0px;
+    font-size: 24px;
+  }
+}
+
 .main-screen__title {
   font-family: Raleway;
   font-size: 52px;
   font-weight: 800;
   color: #ffffff;
   padding: 0px 0px 19px 0px;
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .main-screen__title {
+    padding: 0px 0px 5px 0px;
+    font-size: 24px;
+  }
 }
 
 .main-screen__subtitle {
@@ -360,6 +374,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   color: #ffffff;
   padding: 0px 0px 52px 0px;
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .main-screen__subtitle {
+    padding: 0px 0px 30px 0px;
+  }
 }
 
 .main-screen__btn {
@@ -374,6 +394,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0 3px 0 0  #736357;
           box-shadow: 0 3px 0 0  #736357;
   background-color: #998675;
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .main-screen__btn {
+    padding: 15px 33px 15px 33px;
+  }
 }
 
 .main-screen__btn:hover {
